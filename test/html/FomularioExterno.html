@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="/test/css/style.css">
+
+    <link rel="icon" href="/test/images/LOGO.png">
+
+    <!-- Incluir CSS y JS de SweetAlert2 -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+
+    <title>Formulario</title>
+</head>
+<body>
+
+    
+    <!--Contenedor para la barra de menu-->
+    <div id="menu-container" class="bg-yellow"></div>
+
+    
+    <div class="container-p"  >
+        <div class="fm" >
+           <h2 class="fm_title" id="forms" > ¡Formulario de Paquetes!</h2>
+       
+           <p class="fm_subtitle">Llena los campos del siguiente formulario para pedir más información acerca 
+            de los paquetes que más te interesen.
+           </p>
+       
+           <form id="fm-contact" class="fm-ligh" action="../php/procesar_formulario.php" method="POST">
+            <div class="fm-group">
+                <input type="text" id="nombre" name="nombre" required minlength="3" placeholder="">
+                <label for="nombre" title="Nombre">Nombre completo:</label>
+            </div>
+        
+            <div class="fm-group">
+                <input type="email" id="email" name="email" required placeholder="">
+                <label for="email" title="Correo Electrónico">Correo Electrónico:</label>
+            </div>
+        
+            <div class="fm-group">
+                <textarea id="mensaje" name="mensaje" rows="4" required required minlength="10" placeholder=""></textarea>
+                <label for="mensaje" title="Mensaje">Mensaje:</label>
+            </div>
+            <button class="boton" title="Enviar" type="submit">Enviar</button>
+        </form>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+
+
+
+
+ <!--Contenedor para el footer y redes sociales-->
+ <div id="footer-container"></div>
+
+ <!--Apartado de scripsts-->
+ <script src="/test/js/footer.js" defer></script>
+ <script src="/test/js/menu.js" defer></script>
+ <script src="/test/js/script.js" defer></script>
+ <script src="/test/js/formulario.js" defer></script>
+ <script src="/test/js/vermas.js" defer></script>
+ <script src="/test/js/validaciondeformulario.js" defer></script>
+
+        
+
+
+</body>
+</html>

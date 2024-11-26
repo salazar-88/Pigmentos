@@ -1,0 +1,87 @@
+
+/*Inicio del forms Paquetes*/
+
+.fm {
+    margin: 20px 0px 46px 434px;
+    padding: 3rem 1.5rem;
+    width: min(530px, 90%);
+    border-radius: 10px;
+    background-image: url(/test/images/colorpastel.jpg);
+}
+
+.fm_title {
+    font-size: 2rem;
+    color: #4d4949;
+}
+
+.fm_subtitle {
+    margin-top: 1.7rem;
+    padding: 0px 0px 6px;
+}
+
+.fm-group {
+    position: relative;
+    margin-bottom: -5px;
+}
+
+.fm-group label {
+    position: absolute;
+    top: 30px;
+    left: 4px;
+    transition: 0.2s;
+    color: #aaa;
+    pointer-events: none;
+}
+
+.fm-group input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 29px;
+    outline: none;
+}
+
+.fm-group input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #eaecee;
+}
+
+.fm-group input[type="text"]:focus + label,
+input[type="email"]:focus + label,
+textarea:focus + label,
+input[type="text"]:not(:placeholder-shown) + label,
+input[type="email"]:not(:placeholder-shown) + label,
+textarea:not(:placeholder-shown) + label {
+    top: 8px;
+    left: 6px;
+    font-size: 16px;
+    color: #0000009e;
+}
+
+.fm .boton {
+        width: 45%;
+        /* bottom: -8px; */
+        /* right: 0px; */
+        /* padding: 10px; */
+        background-color: #000000;
+        color: #fff;
+        border: none;
+        border-radius: 22px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+        position: relative;
+        top: 17px;
+        left: 135px;
+        /* text-align: center; */
+}
+
+.fm .boton:hover {
+    background-color: #388e3c;
+}
+
+/*Fin del forms Paquetes*/
